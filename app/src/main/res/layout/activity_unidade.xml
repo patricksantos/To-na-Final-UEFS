@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorLightGrey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UnidadeActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" tools:ignore="MissingConstraints">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inserir Nota:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                tools:ignore="HardcodedText"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+            <EditText
+                    style="@style/mCustromEditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:hint="@string/nota"
+                    android:gravity="center"
+                    android:id="@+id/txt_nota"
+                    android:inputType="numberDecimal"
+            />
+
+            <EditText
+                    style="@style/mCustromEditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:hint="@string/peso"
+                    android:gravity="center"
+                    android:id="@+id/txt_peso"
+                    android:inputType="number"
+            />
+        </LinearLayout>
+
+        <Button
+                android:background="@drawable/round_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adicionar"
+                android:textColor="@color/colorLightGrey"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:layout_margin="15dp"
+                android:padding="20dp"
+                android:id="@+id/btn_calcular_media"
+
+        />
+
+
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/calcular"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|end"
+                android:layout_weight="0.8"
+                android:layout_margin="16dp"
+                android:background="@drawable/round_btn"
+                android:textColor="@color/colorLightGrey"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:padding="20dp"
+                android:elevation="9dp"
+        />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

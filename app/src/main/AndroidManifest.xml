@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="livrokotlin.com.tonafinal_kotlin">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/view_imagem4"
+            android:label="To Na Final"
+            android:roundIcon="@drawable/view_imagem4"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".UnidadeActivity"
+                  android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.suport.PARENT_ACTIVITY"
+                    android:value=".MainActivity"/>
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait"
+                android:label="To Na Final"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

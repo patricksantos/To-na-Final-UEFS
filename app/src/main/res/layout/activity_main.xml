@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="9dp">
+
+            <Button
+                    android:id="@+id/btn_info"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_info"
+                    tools:ignore="UnusedAttribute"
+            />
+
+            <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:text="To Na Final"
+                    android:textStyle="bold"
+                    android:layout_weight="9"
+                    android:textSize="20sp"
+                    android:padding="16dp"
+                    android:textColor="@color/colorAccent"
+                    tools:targetApi="lollipop" tools:ignore="HardcodedText"
+            />
+
+            <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_reload"
+                    tools:ignore="UnusedAttribute"
+            />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|end">
+
+
+       <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           <android.support.design.widget.FloatingActionButton
+                   android:id="@+id/fab"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="bottom|end"
+                   android:layout_marginEnd="16dp"
+                   android:scaleType="center"
+                   app:fabSize="normal"
+                   app:elevation="9dp"
+                   app:backgroundTint="@color/colorPrimary"
+                   app:maxImageSize="25dp"
+                   app:srcCompat="@drawable/ic_add" />
+
+           <android.support.design.widget.FloatingActionButton
+                   android:id="@+id/btn_result"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="bottom|end"
+                   android:scaleType="center"
+                   android:layout_marginBottom="16dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="16dp"
+                   app:fabSize="normal"
+                   app:elevation="9dp"
+                   app:backgroundTint="@color/colorPrimary"
+                   app:maxImageSize="25sp"
+                   app:srcCompat="@drawable/ic_equal"/>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

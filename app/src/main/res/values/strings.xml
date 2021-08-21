@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">To Na Final</string>
+    <string name="action_settings">Settings</string>
+    <string name="nota">Nota</string>
+    <string name="peso">Peso</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="calcular">Calcular</string>
+</resources>
